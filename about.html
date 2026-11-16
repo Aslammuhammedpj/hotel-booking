@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | GRAND HORIZON</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+<style>
+
+.about-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920");
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+}
+
+.history-section {
+    background-color: #f8f9fa;
+}
+
+.about-feature {
+    background-color: white;
+    transition: 0.3s;
+}
+
+.about-feature:hover {
+    transform: translateY(-8px);
+}
+
+.about-icon {
+    font-size: 45px;
+    color: #d6a500;
+}
+
+.amenity-card {
+    background-color: white;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.amenity-card:hover {
+    transform: translateY(-5px);
+}
+
+.amenity-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.about-cta {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1920");
+    background-size: cover;
+    background-position: center;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <div class="container">
+        <a class="navbar-brand fw-bold text-warning fs-3" href="index.html">GRAND HORIZON</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+                <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item ms-lg-3">
+                    <a href="contact.html" class="btn btn-warning px-4">Book Now</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-warning">GRAND HORIZON</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+            <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item mt-3">
+                <a href="contact.html" class="btn btn-warning w-100">Book Now</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<section class="about-hero text-white text-center">
+    <div class="container">
+        <h1 class="display-3 fw-bold">About GRAND HORIZON</h1>
+        <p class="lead">Where luxury meets comfort and every stay becomes a memory.</p>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1000" class="img-fluid rounded shadow" alt="Grand Horizon hotel exterior">
+            </div>
+
+            <div class="col-lg-6">
+                <h6 class="text-warning fw-bold">WELCOME TO OUR HOTEL</h6>
+                <h2 class="fw-bold mb-3">A Place to Feel at Home</h2>
+                <p class="text-muted">
+                    GRAND HORIZON is designed to provide guests with a relaxing
+                    and memorable hospitality experience. Our hotel combines
+                    elegant surroundings, comfortable accommodation and
+                    friendly service to make every visit special.
+                </p>
+                <p class="text-muted">
+                    From peaceful rooms to carefully selected facilities,
+                    every detail is planned to make your stay comfortable.
+                    Whether you are travelling for business, enjoying a
+                    family holiday or celebrating a special occasion,
+                    we welcome you with warmth and care.
+                </p>
+                <a href="rooms.html" class="btn btn-warning px-4 mt-2">Explore Our Rooms</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="history-section py-5">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6 order-lg-2">
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1000" class="img-fluid rounded shadow" alt="Beautiful hotel swimming pool and surroundings">
+            </div>
+
+            <div class="col-lg-6 order-lg-1">
+                <h6 class="text-warning fw-bold">OUR STORY</h6>
+                <h2 class="fw-bold mb-3">Our Journey of Hospitality</h2>
+                <p class="text-muted">
+                    GRAND HORIZON was created with a simple vision:
+                    to offer guests a place where they can relax,
+                    feel welcomed and enjoy quality hospitality.
+                </p>
+                <p class="text-muted">
+                    Over time, our vision has grown into a welcoming
+                    destination focused on comfort, thoughtful service
+                    and memorable experiences. We continue to aim for
+                    excellence in every part of the guest experience.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h6 class="text-warning fw-bold">DISCOVER OUR HOTEL</h6>
+            <h2 class="fw-bold">What Makes Us Special</h2>
+            <p class="text-muted">Experience the difference at GRAND HORIZON.</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="about-feature text-center p-4 h-100 shadow-sm rounded">
+                    <div class="about-icon">✦</div>
+                    <h5 class="fw-bold mt-3">Elegant Accommodation</h5>
+                    <p class="text-muted">Beautifully designed rooms with comfortable interiors and modern facilities.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="about-feature text-center p-4 h-100 shadow-sm rounded">
+                    <div class="about-icon">♛</div>
+                    <h5 class="fw-bold mt-3">Personalized Service</h5>
+                    <p class="text-muted">Friendly hospitality and thoughtful attention to make every guest feel welcome.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="about-feature text-center p-4 h-100 shadow-sm rounded">
+                    <div class="about-icon">❖</div>
+                    <h5 class="fw-bold mt-3">Peaceful Surroundings</h5>
+                    <p class="text-muted">A relaxing atmosphere where guests can take a break from their busy routines.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h6 class="text-warning fw-bold">OUR FACILITIES</h6>
+            <h2 class="fw-bold">Amenities for Every Guest</h2>
+            <p class="text-muted">Everything you need for a comfortable stay.</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4 col-sm-6">
+                <div class="amenity-card">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800" alt="Swimming pool">
+                    <div class="p-3">
+                        <h5 class="fw-bold">Swimming Pool</h5>
+                        <p class="text-muted mb-0">Enjoy a refreshing and relaxing swimming experience.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="amenity-card">
+                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800" alt="Hotel spa">
+                    <div class="p-3">
+                        <h5 class="fw-bold">Spa & Wellness</h5>
+                        <p class="text-muted mb-0">Relax and refresh with our wellness facilities.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="amenity-card">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800" alt="Hotel restaurant">
+                    <div class="p-3">
+                        <h5 class="fw-bold">Restaurant</h5>
+                        <p class="text-muted mb-0">Enjoy delicious meals in a welcoming atmosphere.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="amenity-card">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800" alt="Hotel gym">
+                    <div class="p-3">
+                        <h5 class="fw-bold">Fitness Centre</h5>
+                        <p class="text-muted mb-0">Stay active during your visit with fitness facilities.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="amenity-card">
+                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800" alt="Hotel workspace">
+                    <div class="p-3">
+                        <h5 class="fw-bold">Free Wi-Fi</h5>
+                        <p class="text-muted mb-0">Stay connected throughout your stay.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="amenity-card">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800" alt="Hotel reception">
+                    <div class="p-3">
+                        <h5 class="fw-bold">24/7 Reception</h5>
+                        <p class="text-muted mb-0">Our reception team is available to assist guests.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-cta text-center text-white py-5">
+    <div class="container py-4">
+        <h2 class="fw-bold display-5">Your Perfect Stay Starts Here</h2>
+        <p class="lead">Discover comfort and hospitality at GRAND HORIZON.</p>
+        <a href="rooms.html" class="btn btn-warning btn-lg px-4 mt-2">View Our Rooms</a>
+    </div>
+</section>
+
+<footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+        <h4 class="text-warning fw-bold">GRAND HORIZON</h4>
+        <p class="mb-2">Experience comfort, luxury and unforgettable hospitality.</p>
+        <div class="mb-3">
+            <a href="index.html" class="text-white text-decoration-none mx-2">Home</a>
+            <a href="rooms.html" class="text-white text-decoration-none mx-2">Rooms</a>
+            <a href="about.html" class="text-white text-decoration-none mx-2">About</a>
+            <a href="services.html" class="text-white text-decoration-none mx-2">Services</a>
+            <a href="contact.html" class="text-white text-decoration-none mx-2">Contact</a>
+        </div>
+        <p class="mb-0">&copy; 2026 GRAND HORIZON. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

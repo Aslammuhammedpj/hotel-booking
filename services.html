@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | GRAND HORIZON</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+.services-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920");
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+}
+
+.service-card {
+    background-color: white;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.service-details {
+    background-color: #f8f9fa;
+    border-left: 4px solid #d6a500;
+}
+
+.service-details ul {
+    margin-bottom: 0;
+}
+
+.service-cta {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1920");
+    background-size: cover;
+    background-position: center;
+}
+
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <div class="container">
+        <a class="navbar-brand fw-bold text-warning fs-3" href="index.html">GRAND HORIZON</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item ms-lg-3">
+                    <a href="contact.html" class="btn btn-warning px-4">Book Now</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-warning">GRAND HORIZON</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item mt-3">
+                <a href="contact.html" class="btn btn-warning w-100">Book Now</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<section class="services-hero text-center text-white">
+    <div class="container">
+        <h1 class="display-3 fw-bold">Our Services</h1>
+        <p class="lead">Everything you need for a relaxing and memorable stay.</p>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h6 class="text-warning fw-bold">WHAT WE OFFER</h6>
+            <h2 class="fw-bold">Explore Our Hotel Services</h2>
+            <p class="text-muted">Discover the facilities designed to make your stay special.</p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-6">
+                <div class="service-card shadow-sm rounded overflow-hidden h-100">
+                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=900" class="service-img" alt="Hotel spa">
+                    <div class="p-4">
+                        <h4 class="fw-bold">Spa & Wellness</h4>
+                        <p class="text-muted">Relax your mind and body with our wellness facilities.</p>
+
+                        <button class="btn btn-outline-warning text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#spaDetails">
+                            View Details
+                        </button>
+
+                        <div class="collapse mt-3" id="spaDetails">
+                            <div class="service-details p-3 rounded">
+                                <p>Enjoy a peaceful wellness experience with relaxing treatments and comfortable surroundings.</p>
+                                <ul>
+                                    <li>Relaxation treatments</li>
+                                    <li>Wellness facilities</li>
+                                    <li>Peaceful relaxation area</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="service-card shadow-sm rounded overflow-hidden h-100">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=900" class="service-img" alt="Hotel gym">
+                    <div class="p-4">
+                        <h4 class="fw-bold">Fitness Centre</h4>
+                        <p class="text-muted">Maintain your fitness routine while travelling.</p>
+
+                        <button class="btn btn-outline-warning text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#gymDetails">
+                            View Details
+                        </button>
+
+                        <div class="collapse mt-3" id="gymDetails">
+                            <div class="service-details p-3 rounded">
+                                <p>Our fitness centre provides a convenient space for guests to stay active during their visit.</p>
+                                <ul>
+                                    <li>Modern exercise equipment</li>
+                                    <li>Cardio workout area</li>
+                                    <li>Strength training facilities</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="service-card shadow-sm rounded overflow-hidden h-100">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=900" class="service-img" alt="Hotel restaurant">
+                    <div class="p-4">
+                        <h4 class="fw-bold">Restaurant</h4>
+                        <p class="text-muted">Enjoy delicious food in a welcoming atmosphere.</p>
+
+                        <button class="btn btn-outline-warning text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#restaurantDetails">
+                            View Details
+                        </button>
+
+                        <div class="collapse mt-3" id="restaurantDetails">
+                            <div class="service-details p-3 rounded">
+                                <p>Discover a variety of delicious dishes prepared to make your dining experience enjoyable.</p>
+                                <ul>
+                                    <li>Breakfast, lunch and dinner</li>
+                                    <li>Variety of food options</li>
+                                    <li>Comfortable dining environment</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="service-card shadow-sm rounded overflow-hidden h-100">
+                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900" class="service-img" alt="Wi-Fi and workspace">
+                    <div class="p-4">
+                        <h4 class="fw-bold">Free Wi-Fi</h4>
+                        <p class="text-muted">Stay connected throughout your visit.</p>
+
+                        <button class="btn btn-outline-warning text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#wifiDetails">
+                            View Details
+                        </button>
+
+                        <div class="collapse mt-3" id="wifiDetails">
+                            <div class="service-details p-3 rounded">
+                                <p>Guests can access Wi-Fi to browse, communicate and work during their stay.</p>
+                                <ul>
+                                    <li>Internet access for guests</li>
+                                    <li>Suitable for browsing and work</li>
+                                    <li>Available in guest areas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="service-card shadow-sm rounded overflow-hidden h-100">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=900" class="service-img" alt="Swimming pool">
+                    <div class="p-4">
+                        <h4 class="fw-bold">Swimming Pool</h4>
+                        <p class="text-muted">Enjoy a refreshing break in our pool area.</p>
+
+                        <button class="btn btn-outline-warning text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#poolDetails">
+                            View Details
+                        </button>
+
+                        <div class="collapse mt-3" id="poolDetails">
+                            <div class="service-details p-3 rounded">
+                                <p>Spend your leisure time relaxing and enjoying a refreshing swimming experience.</p>
+                                <ul>
+                                    <li>Outdoor swimming area</li>
+                                    <li>Relaxation space</li>
+                                    <li>Comfortable poolside surroundings</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="service-card shadow-sm rounded overflow-hidden h-100">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=900" class="service-img" alt="Hotel reception">
+                    <div class="p-4">
+                        <h4 class="fw-bold">24/7 Reception</h4>
+                        <p class="text-muted">Our team is ready to assist you whenever needed.</p>
+
+                        <button class="btn btn-outline-warning text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#receptionDetails">
+                            View Details
+                        </button>
+
+                        <div class="collapse mt-3" id="receptionDetails">
+                            <div class="service-details p-3 rounded">
+                                <p>Our reception service helps guests with their stay and general hotel inquiries.</p>
+                                <ul>
+                                    <li>Guest assistance</li>
+                                    <li>Check-in and check-out support</li>
+                                    <li>General information and inquiries</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="service-cta text-center text-white py-5">
+    <div class="container py-4">
+        <h2 class="display-5 fw-bold">Enjoy a Complete Hospitality Experience</h2>
+        <p class="lead">Make your next stay special with GRAND HORIZON.</p>
+        <a href="contact.html" class="btn btn-warning btn-lg px-4 mt-2">Book Your Stay</a>
+    </div>
+</section>
+
+<footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+        <h4 class="text-warning fw-bold">GRAND HORIZON</h4>
+        <p class="mb-2">Experience comfort, luxury and unforgettable hospitality.</p>
+        <div class="mb-3">
+            <a href="index.html" class="text-white text-decoration-none mx-2">Home</a>
+            <a href="rooms.html" class="text-white text-decoration-none mx-2">Rooms</a>
+            <a href="about.html" class="text-white text-decoration-none mx-2">About</a>
+            <a href="services.html" class="text-white text-decoration-none mx-2">Services</a>
+            <a href="contact.html" class="text-white text-decoration-none mx-2">Contact</a>
+        </div>
+        <p class="mb-0">&copy; 2026 GRAND HORIZON. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms | GRAND HORIZON</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+.rooms-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1920");
+    background-size: cover;
+    background-position: center;
+}
+
+.room-img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.discount-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1920");
+    background-size: cover;
+    background-position: center;
+    padding: 90px 30px;
+    border-radius: 5px;
+}
+
+.card {
+    border: none;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <div class="container">
+        <a class="navbar-brand fw-bold text-warning fs-3" href="index.html">GRAND HORIZON</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="rooms.html">Rooms</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item ms-lg-3">
+                    <a href="contact.html" class="btn btn-warning px-4">Book Now</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-warning">GRAND HORIZON</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="rooms.html">Rooms</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item mt-3">
+                <a href="contact.html" class="btn btn-warning w-100">Book Now</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<section class="rooms-header text-center text-white py-5">
+    <div class="container py-4">
+        <h1 class="display-4 fw-bold">Our Rooms</h1>
+        <p class="lead">Discover comfort, luxury and unforgettable hospitality.</p>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Explore Our Accommodation</h2>
+            <p class="text-muted">Choose the perfect room for your stay.</p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800" class="card-img-top room-img" alt="Standard Room">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Standard Room</h5>
+                        <p class="card-text text-muted">A comfortable room with modern essentials for a relaxing stay.</p>
+                        <h5 class="text-warning">₹2,500 <small class="text-muted fs-6">/ night</small></h5>
+                        <button class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#standardModal">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800" class="card-img-top room-img" alt="Deluxe Room">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Deluxe Room</h5>
+                        <p class="card-text text-muted">Enjoy spacious interiors and premium facilities.</p>
+                        <h5 class="text-warning">₹4,000 <small class="text-muted fs-6">/ night</small></h5>
+                        <button class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#deluxeModal">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800" class="card-img-top room-img" alt="Luxury Suite">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Luxury Suite</h5>
+                        <p class="card-text text-muted">Experience elegance with a separate living area and luxury comfort.</p>
+                        <h5 class="text-warning">₹7,500 <small class="text-muted fs-6">/ night</small></h5>
+                        <button class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#suiteModal">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800" class="card-img-top room-img" alt="Family Room">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Family Room</h5>
+                        <p class="card-text text-muted">A spacious accommodation designed for families and groups.</p>
+                        <h5 class="text-warning">₹6,000 <small class="text-muted fs-6">/ night</small></h5>
+                        <button class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#familyModal">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="discount-banner text-center text-white my-5">
+            <h2 class="display-5 fw-bold">SPECIAL ROOM OFFER</h2>
+            <h3 class="display-4 fw-bold text-warning">30% OFF</h3>
+            <p class="fs-5">Enjoy more comfort for less. Book your dream stay today!</p>
+            <a href="contact.html" class="btn btn-warning btn-lg px-4">Book Your Stay</a>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1564078516393-cf04bd966897?w=800" class="card-img-top room-img" alt="Executive Room">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Executive Room</h5>
+                        <p class="card-text text-muted">A stylish room with a comfortable workspace and elegant interiors.</p>
+                        <h5 class="text-warning">₹5,000 <small class="text-muted fs-6">/ night</small></h5>
+                        <button class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#executiveModal">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?w=800" class="card-img-top room-img" alt="Premium Room">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Premium Room</h5>
+                        <p class="card-text text-muted">Relax in a beautifully designed room with premium amenities.</p>
+                        <h5 class="text-warning">₹5,500 <small class="text-muted fs-6">/ night</small></h5>
+                        <button class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#premiumModal">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800" class="card-img-top room-img" alt="Pool View Room">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Pool View Room</h5>
+                        <p class="card-text text-muted">Wake up to beautiful pool views and a peaceful atmosphere.</p>
+                        <h5 class="text-warning">₹6,500 <small class="text-muted fs-6">/ night</small></h5>
+                        <button class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#poolModal">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800" class="card-img-top room-img" alt="Presidential Suite">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Presidential Suite</h5>
+                        <p class="card-text text-muted">The ultimate luxury experience with spacious interiors and exclusive comfort.</p>
+                        <h5 class="text-warning">₹12,000 <small class="text-muted fs-6">/ night</small></h5>
+                        <button class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#presidentialModal">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="modal fade" id="standardModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Standard Room</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row g-3">
+                    <div class="col-md-6"><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800" class="img-fluid rounded" alt="Standard Room interior"></div>
+                    <div class="col-md-6"><img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800" class="img-fluid rounded" alt="Standard Room bed"></div>
+                </div>
+                <p class="mt-3">A welcoming room featuring a comfortable bed, air conditioning, Wi-Fi, television and a private bathroom.</p>
+                <h5 class="text-warning">₹2,500 / night</h5>
+                <a href="contact.html" class="btn btn-warning">Book This Room</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="deluxeModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Deluxe Room</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row g-3">
+                    <div class="col-md-6"><img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800" class="img-fluid rounded" alt="Deluxe Room interior"></div>
+                    <div class="col-md-6"><img src="https://images.unsplash.com/photo-1595576508898-0ad5c879a061?w=800" class="img-fluid rounded" alt="Deluxe Room bed"></div>
+                </div>
+                <p class="mt-3">Enjoy extra space, elegant furnishings, air conditioning, Wi-Fi, television and a modern private bathroom.</p>
+                <h5 class="text-warning">₹4,000 / night</h5>
+                <a href="contact.html" class="btn btn-warning">Book This Room</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="suiteModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Luxury Suite</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row g-3">
+                    <div class="col-md-6"><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800" class="img-fluid rounded" alt="Luxury Suite bedroom"></div>
+                    <div class="col-md-6"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800" class="img-fluid rounded" alt="Luxury Suite living area"></div>
+                </div>
+                <p class="mt-3">A luxury suite with a separate living area, premium bedding, modern bathroom, Wi-Fi and exclusive room amenities.</p>
+                <h5 class="text-warning">₹7,500 / night</h5>
+                <a href="contact.html" class="btn btn-warning">Book This Room</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="familyModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Family Room</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row g-3">
+                    <div class="col-md-6"><img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800" class="img-fluid rounded" alt="Family Room"></div>
+                    <div class="col-md-6"><img src="https://images.unsplash.com/photo-1595576508898-0ad5c879a061?w=800" class="img-fluid rounded" alt="Family Room interior"></div>
+                </div>
+                <p class="mt-3">Designed for families and groups, this room offers generous space, comfortable beds, Wi-Fi and modern facilities.</p>
+                <h5 class="text-warning">₹6,000 / night</h5>
+                <a href="contact.html" class="btn btn-warning">Book This Room</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="executiveModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Executive Room</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row g-3">
+                    <div class="col-md-6"><img src="https://images.unsplash.com/photo-1564078516393-cf04bd966897?w=800" class="img-fluid rounded" alt="Executive Room"></div>
+                    <div class="col-md-6"><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800" class="img-fluid rounded" alt="Executive Room interior"></div>
+                </div>
+                <p class="mt-3">An elegant room with a comfortable workspace, premium bedding, Wi-Fi, air conditioning and modern facilities.</p>
+                <h5 class="text-warning">₹5,000 / night</h5>
+                <a href="contact.html" class="btn btn-warning">Book This Room</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="premiumModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Premium Room</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row g-3">
+                    <div class="col-md-6"><img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?w=800" class="img-fluid rounded" alt="Premium Room"></div>
+                    <div class="col-md-6"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800" class="img-fluid rounded" alt="Premium Room interior"></div>
+                </div>
+                <p class="mt-3">Relax in a beautifully designed room with premium furnishings, comfortable bedding, Wi-Fi and modern amenities.</p>
+                <h5 class="text-warning">₹5,500 / night</h5>
+                <a href="contact.html" class="btn btn-warning">Book This Room</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="poolModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Pool View Room</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row g-3">
+                    <div class="col-md-6"><img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800" class="img-fluid rounded" alt="Pool View Room"></div>
+                    <div class="col-md-6"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800" class="img-fluid rounded" alt="Hotel swimming pool"></div>
+                </div>
+                <p class="mt-3">Enjoy a relaxing stay with beautiful pool views, comfortable interiors, Wi-Fi and premium room facilities.</p>
+                <h5 class="text-warning">₹6,500 / night</h5>
+                <a href="contact.html" class="btn btn-warning">Book This Room</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="presidentialModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Presidential Suite</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row g-3">
+                    <div class="col-md-6"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800" class="img-fluid rounded" alt="Presidential Suite"></div>
+                    <div class="col-md-6"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800" class="img-fluid rounded" alt="Presidential Suite living area"></div>
+                </div>
+                <p class="mt-3">Our finest accommodation features spacious interiors, a separate living area, luxury furnishings and exclusive comfort.</p>
+                <h5 class="text-warning">₹12,000 / night</h5>
+                <a href="contact.html" class="btn btn-warning">Book This Room</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+        <h4 class="text-warning fw-bold">GRAND HORIZON</h4>
+        <p class="mb-2">Experience comfort, luxury and unforgettable hospitality.</p>
+        <div class="mb-3">
+            <a href="index.html" class="text-white text-decoration-none mx-2">Home</a>
+            <a href="rooms.html" class="text-white text-decoration-none mx-2">Rooms</a>
+            <a href="about.html" class="text-white text-decoration-none mx-2">About</a>
+            <a href="services.html" class="text-white text-decoration-none mx-2">Services</a>
+            <a href="contact.html" class="text-white text-decoration-none mx-2">Contact</a>
+        </div>
+        <p class="mb-0">&copy; 2026 GRAND HORIZON. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

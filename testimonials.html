@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials | GRAND HORIZON</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+.testimonials-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1920");
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+}
+
+.testimonial-card {
+    max-width: 750px;
+    min-height: 390px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border: 4px solid #d6a500;
+}
+
+.testimonial-quote {
+    font-size: 17px;
+    color: #666;
+    font-style: italic;
+}
+
+.carousel-indicators {
+    bottom: -55px;
+}
+
+.carousel-indicators button {
+    background-color: #d6a500 !important;
+}
+
+.carousel-control-prev {
+    left: -35px;
+}
+
+.carousel-control-next {
+    right: -35px;
+}
+
+.review-highlight {
+    background-color: #212529;
+}
+
+@media (max-width: 767px) {
+    .testimonial-card {
+        min-height: 430px;
+    }
+
+    .carousel-control-prev {
+        left: -15px;
+    }
+
+    .carousel-control-next {
+        right: -15px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <div class="container">
+        <a class="navbar-brand fw-bold text-warning fs-3" href="index.html">GRAND HORIZON</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link active" href="testimonials.html">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item ms-lg-3">
+                    <a href="contact.html" class="btn btn-warning px-4">Book Now</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-warning">GRAND HORIZON</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link active" href="testimonials.html">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item mt-3">
+                <a href="contact.html" class="btn btn-warning w-100">Book Now</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<section class="testimonials-hero text-center text-white">
+    <div class="container">
+        <h1 class="display-3 fw-bold">Guest Testimonials</h1>
+        <p class="lead">Discover what our guests say about their experience.</p>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h6 class="text-warning fw-bold">GUEST EXPERIENCES</h6>
+            <h2 class="fw-bold">What Our Guests Say</h2>
+            <p class="text-muted">Every guest experience inspires us to do better.</p>
+        </div>
+
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Review 1"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Review 2"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Review 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="testimonial-card text-center mx-auto p-4 p-md-5">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300" class="testimonial-img rounded-circle mb-3" alt="Guest John">
+                        <h4 class="fw-bold">John Mathew</h4>
+                        <p class="text-warning fs-4">★★★★★</p>
+                        <p class="testimonial-quote">
+                            "A wonderful experience! The rooms were clean and comfortable,
+                            and the staff were very friendly. I enjoyed every moment of my stay."
+                        </p>
+                        <h6 class="text-warning">Family Vacation</h6>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="testimonial-card text-center mx-auto p-4 p-md-5">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300" class="testimonial-img rounded-circle mb-3" alt="Guest Sarah">
+                        <h4 class="fw-bold">Sarah Williams</h4>
+                        <p class="text-warning fs-4">★★★★★</p>
+                        <p class="testimonial-quote">
+                            "The hotel atmosphere was beautiful and peaceful.
+                            The restaurant and facilities made our trip even more special.
+                            I would definitely love to visit again."
+                        </p>
+                        <h6 class="text-warning">Holiday Stay</h6>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="testimonial-card text-center mx-auto p-4 p-md-5">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300" class="testimonial-img rounded-circle mb-3" alt="Guest David">
+                        <h4 class="fw-bold">David Thomas</h4>
+                        <p class="text-warning fs-4">★★★★★</p>
+                        <p class="testimonial-quote">
+                            "Excellent hospitality and a very comfortable room.
+                            The entire experience was smooth from arrival to departure.
+                            Highly recommended for a relaxing stay."
+                        </p>
+                        <h6 class="text-warning">Business Trip</h6>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+    </div>
+</section>
+
+<section class="review-highlight py-5">
+    <div class="container">
+        <div class="row g-4 text-center">
+            <div class="col-md-4">
+                <h2 class="display-4 fw-bold text-warning">5.0</h2>
+                <h5 class="text-white">Guest Satisfaction</h5>
+            </div>
+            <div class="col-md-4">
+                <h2 class="display-4 fw-bold text-warning">100%</h2>
+                <h5 class="text-white">Hospitality Focus</h5>
+            </div>
+            <div class="col-md-4">
+                <h2 class="display-4 fw-bold text-warning">24/7</h2>
+                <h5 class="text-white">Guest Support</h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 text-center">
+    <div class="container">
+        <h2 class="fw-bold">Create Your Own Experience</h2>
+        <p class="text-muted">We look forward to welcoming you to GRAND HORIZON.</p>
+        <a href="contact.html" class="btn btn-warning btn-lg px-4 mt-2">Book Your Stay</a>
+    </div>
+</section>
+
+<footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+        <h4 class="text-warning fw-bold">GRAND HORIZON</h4>
+        <p class="mb-2">Experience comfort, luxury and unforgettable hospitality.</p>
+        <div class="mb-3">
+            <a href="index.html" class="text-white text-decoration-none mx-2">Home</a>
+            <a href="rooms.html" class="text-white text-decoration-none mx-2">Rooms</a>
+            <a href="about.html" class="text-white text-decoration-none mx-2">About</a>
+            <a href="services.html" class="text-white text-decoration-none mx-2">Services</a>
+            <a href="contact.html" class="text-white text-decoration-none mx-2">Contact</a>
+        </div>
+        <p class="mb-0">&copy; 2026 GRAND HORIZON. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
